@@ -1,15 +1,3 @@
-/**
- * make the simple counter project
- * upload it to github
- * make a simple description
- * send them to email
- * upload a GIF of expanding card in github
- * improve the project based on in mind
- * upload a project to instgram 
- * upload two projects to linkend and depend on github description
- * 
- */
-
 const counter = () => {
   let count = 0;
 
