@@ -29,5 +29,5 @@ For any questions or feedback, you can reach out to the project maintainer throu
 
 ## Tech Stack
 - HTML
-- CSS (including CSS Variables)
+- CSS 
 - JavaScript
