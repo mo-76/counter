@@ -24,3 +24,10 @@ You can try out the live demo of the Counter App [here](https://mo-76.github.io/
    - Negative count: Red color.
    - Zero count: Black color.
 
+## Contact
+For any questions or feedback, you can reach out to the project maintainer through email or social media. Contact information is available on our GitHub profile.
+
+## Tech Stack
+- HTML
+- CSS (including CSS Variables)
+- JavaScript
