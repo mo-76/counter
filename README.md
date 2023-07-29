@@ -1,6 +1,6 @@
 # counter
 
-![Counter App Screenshot](https://assets.codepen.io/4927073/mybg.jpg](https://github.com/mo-76/counter/assets/69032001/ed0bc99b-e1c4-4d73-9c68-c5e1143d9654)
+![Counter App Screenshot](https://github.com/mo-76/counter/assets/69032001/ed0bc99b-e1c4-4d73-9c68-c5e1143d9654)
 
 This is a simple counter web application built with HTML, CSS, and JavaScript. The app allows you to increase, decrease, and reset the counter value. The count status is visually represented with different colors indicating positive, negative, or zero values.
 
