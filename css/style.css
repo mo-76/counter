@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  opacity: 0.75;
+  background-image: url(https://assets.codepen.io/4927073/mybg.jpg);
+  background-size: cover;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app .title {
+  width: fit-content;
+  font-size: 50px;
+  position: relative;
+  color: #f0e9e6;
+  -webkit-text-stroke: 2px #333a46;
+  text-transform: uppercase;
+}
+
+.app .title::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  -webkit-text-stroke: 0 #333a46;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+.app .title.increase::after {
+  color: green;
+  border-right: 2px solid green;
+}
+
+.app .title.decrease::after {
+  color: red;
+  border-right: 2px solid red;
+}
+
+.app .title.reset::after {
+  color: black;
+  border-right: 2px solid black;
+}
+
+.app .count {
+  font-size: 60px;
+}
+
+.app .title.increase + .count {
+  color: green;
+}
+
+.app .title.decrease + .count {
+  color: red;
+}
+
+.app .title.reset + .count {
+  color: black;
+}
+
+.app .btns {
+  display: flex;
+  gap: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 767px) {
+  .app .btns {
+    flex-direction: column;
+  }
+}
+
+.app .btns a {
+  padding: 3px 15px;
+  border: solid 2px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.app .btns a:hover {
+  background-color: black;
+  color: white;
+}
